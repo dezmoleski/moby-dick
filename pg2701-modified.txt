@@ -1,11 +1,24 @@
-﻿### This file was modified from The Project Gutenberg eBook of Moby Dick; Or, The Whale
+﻿###
+### This file was modified from The Project Gutenberg eBook of Moby Dick; Or, The Whale
 ### Source: https://www.gutenberg.org/cache/epub/2701/pg2701.txt
 ### Retrieved: Fri Mar 21 09:51:18 PM PDT 2025
-### Modifications made by Dez Moleski <dez@moleski.com> for the sole purpose of making
+###
+### Modifications made by Dez Moleski <dez@moleski.com> for the purpose of making
 ### the text easier to split into chapters, paragraphs, and sentences via a script
 ### named split-pg2701-txt.py and available under the MIT License at:
+###
 ###   https://github.com/dezmoleski/moby-dick
 ###
+### The main goal of the script is to transform this source text into an indexed
+### form focused on the sentences that Melville wrote. The Etymology and Extracts are
+### thus not fully split into sentences, but rather again the focus is on the sentences
+### that Melville wrote in introducing each of those prefatory sections.
+###
+### In addition, some chapter titles have been modified slightly; and the Etymology,
+### Extracts, and Epilogue given sequential integer "chapter" numbers to place them in
+### their respective sequence with the original chapters 1 through 135.
+###
+
 The Project Gutenberg eBook of Moby Dick; Or, The Whale
     
 This ebook is for the use of anyone anywhere in the United States and
@@ -43,7 +56,7 @@ By Herman Melville
 
 CONTENTS
 
-ETYMOLOGY.
+ETYMOLOGY (Supplied by a Late Consumptive Usher to a Grammar School).
 
 EXTRACTS (Supplied by a Sub-Sub-Librarian).
 
@@ -245,7 +258,7 @@ CHAPTER 98. Stowing Down and Clearing Up.
 
 CHAPTER 99. The Doubloon.
 
-CHAPTER 100. Leg and Arm.
+CHAPTER 100. Leg and Arm. The Pequod, of Nantucket, Meets the Samuel Enderby, of London.
 
 CHAPTER 101. The Decanter.
 
@@ -338,17 +351,16 @@ was compared with a public domain hard copy version of the text.
 
 
 
-  ETYMOLOGY.
+ETYMOLOGY (Supplied by a Late Consumptive Usher to a Grammar School).
 
+The pale Usher—threadbare in coat, heart, body, and brain; I see him
+now. He was ever dusting his old lexicons and grammars, with a queer
+handkerchief, mockingly embellished with all the gay flags of all the
+known nations of the world. He loved to dust his old grammars; it
+somehow mildly reminded him of his mortality.
 
-  (Supplied by a Late Consumptive Usher to a Grammar School.)
-
-  The pale Usher—threadbare in coat, heart, body, and brain; I see him
-  now. He was ever dusting his old lexicons and grammars, with a queer
-  handkerchief, mockingly embellished with all the gay flags of all the
-  known nations of the world. He loved to dust his old grammars; it
-  somehow mildly reminded him of his mortality.
-
+  ETYMOLOGY
+  
   “While you take in hand to school others, and to teach them by what
   name a whale-fish is to be called in our tongue, leaving out, through
   ignorance, the letter H, which almost alone maketh up the
@@ -378,40 +390,38 @@ was compared with a public domain hard copy version of the text.
 
 
 
-  EXTRACTS. (Supplied by a Sub-Sub-Librarian).
+EXTRACTS (Supplied by a Sub-Sub-Librarian).
 
+It will be seen that this mere painstaking burrower and grub-worm of
+a poor devil of a Sub-Sub appears to have gone through the long
+Vaticans and street-stalls of the earth, picking up whatever random
+allusions to whales he could anyways find in any book whatsoever,
+sacred or profane. Therefore you must not, in every case at least,
+take the higgledy-piggledy whale statements, however authentic, in
+these extracts, for veritable gospel cetology. Far from it. As
+touching the ancient authors generally, as well as the poets here
+appearing, these extracts are solely valuable or entertaining, as
+affording a glancing bird’s eye view of what has been promiscuously
+said, thought, fancied, and sung of Leviathan, by many nations and
+generations, including our own.
 
+So fare thee well, poor devil of a Sub-Sub, whose commentator I am.
+Thou belongest to that hopeless, sallow tribe which no wine of this
+world will ever warm; and for whom even Pale Sherry would be too
+rosy-strong; but with whom one sometimes loves to sit, and feel
+poor-devilish, too; and grow convivial upon tears; and say to them
+bluntly, with full eyes and empty glasses, and in not altogether
+unpleasant sadness—Give it up, Sub-Subs! For by how much the more
+pains ye take to please the world, by so much the more shall ye for
+ever go thankless! Would that I could clear out Hampton Court and the
+Tuileries for ye! But gulp down your tears and hie aloft to the
+royal-mast with your hearts; for your friends who have gone before
+are clearing out the seven-storied heavens, and making refugees of
+long-pampered Gabriel, Michael, and Raphael, against your coming.
+Here ye strike but splintered hearts together—there, ye shall strike
+unsplinterable glasses!
 
-  It will be seen that this mere painstaking burrower and grub-worm of
-  a poor devil of a Sub-Sub appears to have gone through the long
-  Vaticans and street-stalls of the earth, picking up whatever random
-  allusions to whales he could anyways find in any book whatsoever,
-  sacred or profane. Therefore you must not, in every case at least,
-  take the higgledy-piggledy whale statements, however authentic, in
-  these extracts, for veritable gospel cetology. Far from it. As
-  touching the ancient authors generally, as well as the poets here
-  appearing, these extracts are solely valuable or entertaining, as
-  affording a glancing bird’s eye view of what has been promiscuously
-  said, thought, fancied, and sung of Leviathan, by many nations and
-  generations, including our own.
-
-  So fare thee well, poor devil of a Sub-Sub, whose commentator I am.
-  Thou belongest to that hopeless, sallow tribe which no wine of this
-  world will ever warm; and for whom even Pale Sherry would be too
-  rosy-strong; but with whom one sometimes loves to sit, and feel
-  poor-devilish, too; and grow convivial upon tears; and say to them
-  bluntly, with full eyes and empty glasses, and in not altogether
-  unpleasant sadness—Give it up, Sub-Subs! For by how much the more
-  pains ye take to please the world, by so much the more shall ye for
-  ever go thankless! Would that I could clear out Hampton Court and the
-  Tuileries for ye! But gulp down your tears and hie aloft to the
-  royal-mast with your hearts; for your friends who have gone before
-  are clearing out the seven-storied heavens, and making refugees of
-  long-pampered Gabriel, Michael, and Raphael, against your coming.
-  Here ye strike but splintered hearts together—there, ye shall strike
-  unsplinterable glasses!
-
-EXTRACTS.
+  EXTRACTS
 
   “And God created great whales.” —_Genesis_.
 
@@ -16878,9 +16888,7 @@ blackberrying. Cook! ho, cook! and cook us! Jenny! hey, hey, hey, hey,
 hey, Jenny, Jenny! and get your hoe-cake done!”
 
 
-CHAPTER 100. Leg and Arm.
-
-The Pequod, of Nantucket, Meets the Samuel Enderby, of London.
+CHAPTER 100. Leg and Arm. The Pequod, of Nantucket, Meets the Samuel Enderby, of London.
 
 “Ship, ahoy! Hast seen the White Whale?”
 
