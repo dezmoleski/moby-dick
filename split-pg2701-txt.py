@@ -19,17 +19,20 @@ class Chapter:
     number: int
     title: str
     title_offset: int
-    guts_offset: int
+    text_offset: int
     end_offset: int = 0
     
     def __len__(self) -> int:
-        if self.end_offset > self.guts_offset:
-            return self.end_offset -  self.guts_offset
+        if self.end_offset > self.text_offset:
+            return self.end_offset -  self.text_offset
         return 0
 
+    def __repr__(self) -> str:
+        return f'Ch. {self.number} "{self.title}" {self.text_offset} - {self.end_offset}'
+    
     def guts(self) -> str:
         if len(self) > 0:
-            return MOBY_STR[self.guts_offset:self.end_offset]
+            return MOBY_STR[self.text_offset:self.end_offset]
         return ''
     
 def split_moby_dick(filepath: str):
@@ -89,12 +92,8 @@ def split_moby_dick(filepath: str):
     
     # Debug output
     for chap in chapters:
-        print(chap, len(chap))
+        print(chap)
 
-    print("Epilogue:", ep)
-    print(ep.guts())
-    
-    print("N contents:", len(contents))
     print("N chapters:", len(chapters))
     
 if __name__ == "__main__":
