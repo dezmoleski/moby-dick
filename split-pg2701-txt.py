@@ -19,6 +19,7 @@ import sys
 import re
 from dataclasses import dataclass
 from dataclasses import field
+from wordgames import Word,WordList
 
 MOBY_STR = ''
 
@@ -52,6 +53,7 @@ class Paragraph:
     end_offset: int # character offset into MOBY_STR of paragraph end
     is_pre: bool # True if paragraph is pre-formatted i.e. indented by two spaces
     is_footnote: bool # True if first non-whitespace character of para is '*'
+    word_count: int = 0
     
     def __len__(self) -> int:
         if self.end_offset > self.start_offset:
@@ -217,9 +219,6 @@ def split_moby_dick(filepath: str):
         chapter_text = chap.text()
         para_index = 1 # relative index
         para_offset = chap.text_offset
-        # Debug output
-        print(chap)
-        print()
         for para_end_match in re_para_end.finditer(chapter_text):
             match_span_len = para_end_match.end() - para_end_match.start()
             para_end_offset = chap.text_offset + para_end_match.start()
@@ -233,19 +232,80 @@ def split_moby_dick(filepath: str):
             para_num += 1
             para_index += 1
             para_offset = chap.text_offset + para_end_match.end()
-            
-            # Debug output
-            print(para)
-            print(para.text())
-            print()
-        
-    # Debug output
-    #for chap in chapters:
-    #   print(chap)
-    #   print(chap.text())
     
-    print("N chapters:", len(chapters))
-    print("N paragraphs:", len(paragraphs))
+    #############################################
+    # PHASE III - Find words, de-flow paragraphs
+    #############################################
+    
+    # In this phase we're going to visit each "lexical" word (i.e. span of non-space
+    # characters allowed in a word) and build up a list of words found overall.
+    # 
+    # Tricky bits and judgement calls:
+    #  - The "’" character can appear in contractions in which case we consider it
+    #    to be part of the word (e.g. "don’t"), or in forming possesives like "Ahab's"
+    #    in which case it (and the trailing "s") are NOT part of the word.
+    #  - The "’" character can match by itself the word-regex when used to close embedded
+    #    dialogue, so just ignore those.
+    #  - Hyphenated words, e.g. "Rose-bud" are considered two words.
+    #    + BUT CONSIDER SOME EXCEPTIONS: "Sub-sub", "higgledy-piggledy" **TBD** ???
+    #  - Proper nouns and names (e.g. American, Ahab, Rockaway Beach) are a **TBD** challenge!
+    #  - We're skipping pre-formatted paragraphs again to focus on paragraphs containing
+    #    sentences that Melville wrote, rather than including the quotes & titles etc.
+    # 
+    # Also along the way here we'll replace line-end characters with spaces to
+    # build a "de-flowed" or "joined" paragraph string.
+    # 
+    # The previous scan to find paragraphs still has a couple of outliers
+    # that I'm going to call "wordless" paragraphs (also considered "degenerate").
+    # So as we're checking words, for any paragraphs that contain no recognized words
+    # we'll mark those as "wordless" (**TBD** or maybe we'll just use Paragraph.word_count == 0 for this?)
+    # 
+    word_re = r"[a-zA-Z’æéèœ]+"
+    re_word = re.compile(word_re, re.MULTILINE)
+    reference_wordlist = WordList.from_file("WORDLIST.TXT")
+    additions = WordList.from_file("WORDLIST-additions.TXT")
+    reference_wordlist.add_wordlist(additions)
+    names = WordList.from_file("NAMES.TXT")
+    moby_words = WordList()
+    moby_nonwords = WordList()
+    for para in paragraphs:
+        if not para.is_pre:
+            para_text = para.text()
+            # Debug output
+            #print()
+            #print(para)
+            #print()
+            for word_match in re_word.finditer(para_text):
+                word_str = word_match.group().upper()
+                # Continuation cases, just skip these
+                if word_str == "’":
+                    continue
+                # Chop trailing "’s"
+                if word_str.endswith("’S"):
+                    word_str = word_str[:-2]
+                # Chop trailing "’" from "*s’" words like "days'"
+                if word_str.endswith("S’"):
+                    word_str = word_str[:-1]
+                word = Word(word_str)
+                if reference_wordlist.contains_word(word):
+                    moby_words.add_word(word)
+                elif not names.contains_word(word):
+                    moby_nonwords.add_word(word)
+             
+    moby_words.sort()
+    moby_nonwords.sort()
+
+    """
+    wordleable = WordList.from_file("ALL-WORDLEABLE")
+    prev_letter = ''
+    for w in moby_words.word_list:
+        if wordleable.contains_word(w):
+            print(w)
+        
+    #print("N chapters:", len(chapters))
+    #print("N paragraphs:", len(paragraphs))
+    """
+    print("N Moby words:", len(moby_words))
     
 if __name__ == "__main__":
     split_moby_dick("pg2701-modified.txt")
