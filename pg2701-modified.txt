@@ -21,7 +21,9 @@
 ### All footnotes and quotations of other works have been indented two spaces. One
 ### seemingly spurious footnote indicator was removed in chapter 24, following:
 ###  ...the whale is declared “a royal fish.”
-###
+### 
+### Three instances of "aint" were replaced by "ain’t".
+### 
 
 The Project Gutenberg eBook of Moby Dick; Or, The Whale
     
@@ -1317,7 +1319,7 @@ manner.
 “My boy,” said the landlord, “you’ll have the nightmare to a dead
 sartainty.”
 
-“Landlord,” I whispered, “that aint the harpooneer is it?”
+“Landlord,” I whispered, “that ain’t the harpooneer is it?”
 
 “Oh, no,” said he, looking a sort of diabolically funny, “the
 harpooneer is a dark complexioned chap. He never eats dumplings, he
@@ -2093,19 +2095,19 @@ tablets, with black borders, masoned into the wall on either side the
 pulpit. Three of them ran something like the following, but I do not
 pretend to quote:—
 
-SACRED TO THE MEMORY OF JOHN TALBOT, Who, at the age of eighteen, was
-lost overboard, Near the Isle of Desolation, off Patagonia, _November_
-1_st_, 1836. THIS TABLET Is erected to his Memory BY HIS SISTER.
+  SACRED TO THE MEMORY OF JOHN TALBOT, Who, at the age of eighteen, was
+  lost overboard, Near the Isle of Desolation, off Patagonia, _November_
+  1_st_, 1836. THIS TABLET Is erected to his Memory BY HIS SISTER.
 
-SACRED TO THE MEMORY OF ROBERT LONG, WILLIS ELLERY, NATHAN COLEMAN,
-WALTER CANNY, SETH MACY, AND SAMUEL GLEIG, Forming one of the boats’
-crews OF THE SHIP ELIZA Who were towed out of sight by a Whale, On the
-Off-shore Ground in the PACIFIC, _December_ 31_st_, 1839. THIS MARBLE
-Is here placed by their surviving SHIPMATES.
+  SACRED TO THE MEMORY OF ROBERT LONG, WILLIS ELLERY, NATHAN COLEMAN,
+  WALTER CANNY, SETH MACY, AND SAMUEL GLEIG, Forming one of the boats’
+  crews OF THE SHIP ELIZA Who were towed out of sight by a Whale, On the
+  Off-shore Ground in the PACIFIC, _December_ 31_st_, 1839. THIS MARBLE
+  Is here placed by their surviving SHIPMATES.
 
-SACRED TO THE MEMORY OF The late CAPTAIN EZEKIEL HARDY, Who in the bows
-of his boat was killed by a Sperm Whale on the coast of Japan, _August_
-3_d_, 1833. THIS TABLET Is erected to his Memory BY HIS WIDOW.
+  SACRED TO THE MEMORY OF The late CAPTAIN EZEKIEL HARDY, Who in the bows
+  of his boat was killed by a Sperm Whale on the coast of Japan, _August_
+  3_d_, 1833. THIS TABLET Is erected to his Memory BY HIS WIDOW.
 
 Shaking off the sleet from my ice-glazed hat and jacket, I seated
 myself near the door, and turning sideways was surprised to see
@@ -4148,7 +4150,7 @@ heterogeneously mixed with Scriptural and domestic phrases.
 
 “Avast there, avast there, Bildad, avast now spoiling our harpooneer,”
 cried Peleg. “Pious harpooneers never make good voyagers—it takes the
-shark out of ’em; no harpooneer is worth a straw who aint pretty
+shark out of ’em; no harpooneer is worth a straw who ain’t pretty
 sharkish. There was young Nat Swaine, once the bravest boat-header out
 of all Nantucket and the Vineyard; he joined the meeting, and never
 came to good. He got so frightened about his plaguy soul, that he
@@ -5462,7 +5464,7 @@ first time I ever _did_ pray. It’s queer; very queer; and he’s queer
 too; aye, take him fore and aft, he’s about the queerest old man Stubb
 ever sailed with. How he flashed at me!—his eyes like powder-pans! is
 he mad? Anyway there’s something on his mind, as sure as there must be
-something on a deck when it cracks. He aint in his bed now, either,
+something on a deck when it cracks. He ain’t in his bed now, either,
 more than three hours out of the twenty-four; and he don’t sleep then.
 Didn’t that Dough-Boy, the steward, tell me that of a morning he always
 finds the old man’s hammock clothes all rumpled and tumbled, and the
@@ -5614,18 +5616,18 @@ that I would now fain put before you. Yet is it no easy task. The
 classification of the constituents of a chaos, nothing less is here
 essayed. Listen to what the best and latest authorities have laid down.
 
-“No branch of Zoology is so much involved as that which is entitled
-Cetology,” says Captain Scoresby, A.D. 1820.
+  “No branch of Zoology is so much involved as that which is entitled
+  Cetology,” says Captain Scoresby, A.D. 1820.
 
-“It is not my intention, were it in my power, to enter into the inquiry
-as to the true method of dividing the cetacea into groups and families.
-* * * Utter confusion exists among the historians of this animal”
-(sperm whale), says Surgeon Beale, A.D. 1839.
+  “It is not my intention, were it in my power, to enter into the inquiry
+  as to the true method of dividing the cetacea into groups and families.
+  * * * Utter confusion exists among the historians of this animal”
+  (sperm whale), says Surgeon Beale, A.D. 1839.
 
-“Unfitness to pursue our research in the unfathomable waters.”
-“Impenetrable veil covering our knowledge of the cetacea.” “A field
-strewn with thorns.” “All these incomplete indications but serve to
-torture us naturalists.”
+  “Unfitness to pursue our research in the unfathomable waters.”
+  “Impenetrable veil covering our knowledge of the cetacea.” “A field
+  strewn with thorns.” “All these incomplete indications but serve to
+  torture us naturalists.”
 
 Thus speak of the whale, the great Cuvier, and John Hunter, and Lesson,
 those lights of zoology and anatomy. Nevertheless, though of real
@@ -15548,8 +15550,8 @@ are you, reader, but a Loose-Fish and a Fast-Fish, too?
 
 CHAPTER 90. Heads or Tails.
 
-“De balena vero sufficit, si rex habeat caput, et regina caudam.”
-_Bracton, l. 3, c. 3._
+  “De balena vero sufficit, si rex habeat caput, et regina caudam.”
+  _Bracton, l. 3, c. 3._
 
 Latin from the books of the Laws of England, which taken along with the
 context, means, that of all whales captured by anybody on the coast of
@@ -15670,9 +15672,9 @@ seems a reason in all things, even in law.
 
 CHAPTER 91. The Pequod Meets The Rose-Bud.
 
-“In vain it was to rake for Ambergriese in the paunch of this
-Leviathan, insufferable fetor denying not inquiry.” _Sir T. Browne,
-V.E._
+  “In vain it was to rake for Ambergriese in the paunch of this
+  Leviathan, insufferable fetor denying not inquiry.” _Sir T. Browne,
+  V.E._
 
 It was a week or two after the last whaling scene recounted, and when
 we were slowly sailing over a sleepy, vapory, mid-day sea, that the
@@ -17286,11 +17288,11 @@ long detailed list of the outfits for the larders and cellars of 180
 sail of Dutch whalemen; from which list, as translated by Dr. Snodhead,
 I transcribe the following:
 
-400,000 lbs. of beef. 60,000 lbs. Friesland pork. 150,000 lbs. of stock
-fish. 550,000 lbs. of biscuit. 72,000 lbs. of soft bread. 2,800 firkins
-of butter. 20,000 lbs. Texel & Leyden cheese. 144,000 lbs. cheese
-(probably an inferior article). 550 ankers of Geneva. 10,800 barrels of
-beer.
+  400,000 lbs. of beef. 60,000 lbs. Friesland pork. 150,000 lbs. of stock
+  fish. 550,000 lbs. of biscuit. 72,000 lbs. of soft bread. 2,800 firkins
+  of butter. 20,000 lbs. Texel & Leyden cheese. 144,000 lbs. cheese
+  (probably an inferior article). 550 ankers of Geneva. 10,800 barrels of
+  beer.
 
 Most statistical tables are parchingly dry in the reading; not so in
 the present case, however, where the reader is flooded with whole
