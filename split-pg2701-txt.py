@@ -260,12 +260,14 @@ def split_moby_dick(filepath: str):
     # So as we're checking words, for any paragraphs that contain no recognized words
     # we'll mark those as "wordless" (**TBD** or maybe we'll just use Paragraph.word_count == 0 for this?)
     # 
-    word_re = r"[a-zA-Z’æéèœ]+"
+    word_re = r"[a-zA-Z’æéèœ-]+"
     re_word = re.compile(word_re, re.MULTILINE)
     reference_wordlist = WordList.from_file("WORDLIST.TXT")
     additions = WordList.from_file("WORDLIST-additions.TXT")
+    hyphenated = WordList.from_file("MOBY-HYPHENATED.TXT")
     reference_wordlist.add_wordlist(additions)
-    names = WordList.from_file("NAMES.TXT")
+    reference_wordlist.add_wordlist(hyphenated)
+    names = WordList.from_file("MOBY-NAMES.TXT")
     moby_words = WordList()
     moby_nonwords = WordList()
     for para in paragraphs:
@@ -295,7 +297,18 @@ def split_moby_dick(filepath: str):
     moby_words.sort()
     moby_nonwords.sort()
 
-    """
+    print()
+    print("============= MOBY-WORDS")
+    for w in moby_words.word_list:
+        print(w)
+    
+    print()
+    print("============= NON-WORDS")
+    for w in moby_nonwords.word_list:
+        print(w)
+    
+    print()
+    print("============= WORDLEABLE")
     wordleable = WordList.from_file("ALL-WORDLEABLE")
     prev_letter = ''
     for w in moby_words.word_list:
@@ -304,7 +317,7 @@ def split_moby_dick(filepath: str):
         
     #print("N chapters:", len(chapters))
     #print("N paragraphs:", len(paragraphs))
-    """
+    
     print("N Moby words:", len(moby_words))
     
 if __name__ == "__main__":
